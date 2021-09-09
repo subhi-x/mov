@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html style="height: 100%;margin: 0;">
+<head>
+<title>Customer</title>
+<style>
+body
+{
+   color: #000000;
+   padding: 0;
+   text-align: center;
+   top: 40%;
+   height: 100%;margin: 0;
+}
+.bg {
+  background-image: url("img/theatre1.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+input {
+  border: 2px solid rgb(234, 0, 255);
+  border-radius: 4px;
+  width: 60%;
+}
+input:focus {
+  background-color:rgb(255, 131, 152);
+}
+label{
+    font-size: x-large;
+    color: rgb(4, 0, 255);
+}
+.outer{
+    padding: 30px;
+    height:100%;
+}
+.inner{
+    top:50%;
+    margin: auto;
+    border-radius: 3px;
+    height:auto;
+}
+.container {
+  height: 600px;
+  position: relative;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.center2{
+    margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+<div class="bg"> 
+<div class="container" style="text-align: center;">
+<br><br>
+<div class="center2" style="font-size: xx-large;background-color:rgb(10, 164, 202);text-align: center;color:white; width: 70% ;border:3px solid  black;padding: 10px;">Welcome!<br>Enter the Customer Details</div>
+<br><br><br>
+<div class="center" style="background-color: cyan;text-align: center;width: 50%;border: 5px solid darkblue;">
+<form id="form1" action="ins_cust.php" method="POST" >
+    <br>
+<label for="cname">Customer Name:</label><br>
+<input type="text" id="cname" name="cname"><br><br>
+<label for="email_id">Email Id:</label><br>
+<input type="email" id="email_id" name="email_id"><br><br>
+<label for="phone_no">Phone Number:</label><br>
+<input type="number" id="phone_no" name="phone_no"><br><br>
+<input type="submit" name="submit" value="Submit" style="width: 20%;">
+<br>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
